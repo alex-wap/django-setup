@@ -43,7 +43,7 @@ def index(request):
 	return render(request, "APPNAME/index.html")
 ```
 * create templates directory (and write something in index.html):
-```
+```bash
 cd PROJECT/apps/APPNAME
 mkdir templates
 cd templates
