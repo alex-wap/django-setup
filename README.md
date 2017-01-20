@@ -30,7 +30,7 @@ urlpatterns = [
 	]
 ```
 10. create PROJECT/apps/APPNAME/urls.py (routes file, use $, use comma):
-* ```python
+```python
 from django.conf.urls import url
 from . import views
 urlpatterns = [
@@ -38,13 +38,13 @@ urlpatterns = [
 	]
 ```
 11. update views.py:
-* ```python
+```python
 from django.shortcuts import render, redirect
 def index(request):
 	return render(request, "APPNAME/index.html")
 ```
 12. create templates directory (and write something in index.html):
-* ```
+```
 cd PROJECT/apps/APPNAME
 mkdir templates
 cd templates
