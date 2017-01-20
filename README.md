@@ -60,3 +60,10 @@ touch index.html
 * `python manage.py migrate` (directory with manage.py file inside)
 * bracket notation format for FILE.py: `request.session['key']`
 * dot notation format for FILE.html: `{{request.session.key}}`
+
+## Django installation (just in case)
+```bash
+virtualenv djangoEnv
+source djangoEnv/bin/activate
+pip install django
+```
