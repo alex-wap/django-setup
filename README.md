@@ -20,7 +20,8 @@ INSTALLED_APPS = [
 	'apps.APPNAME',
 	...
 	]
-```* update PROJECT/urls.py (make sure your parens match, no $ in route):
+```
+* update PROJECT/urls.py (make sure your parens match, no $ in route):
 ```python
 from django.conf.urls import url, include
 from django.contrib import admin
