@@ -15,14 +15,14 @@ This guide assumes you have already created a virtual environment and Django is 
 7. touch __init__.py (aka dunder file)
 8. python ../manage.py startapp APPNAME (creates APPNAME FOLDER)
 9. update settings.py (do not forget the comma):
-* ```python
+```python
 INSTALLED_APPS = [
 	'apps.APPNAME',
 	...
 	]
 ```
 9. update PROJECT/urls.py (make sure your parens match, no $ in route):
-* ```python
+```python
 from django.conf.urls import url, include
 from django.contrib import admin
 urlpatterns = [
