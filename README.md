@@ -113,3 +113,7 @@ virtualenv djangoEnv
 source djangoEnv/bin/activate
 pip install django
 ```
+## Django comment out templating (must be same line):
+```html
+{# {% load staticfiles %} #}
+```
