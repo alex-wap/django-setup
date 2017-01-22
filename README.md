@@ -82,7 +82,25 @@ mkdir js
 </body>
 </html>
 ```
+## Route Parameters
+* urls.py:
+```python
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+  url(r'^/en/(?P<djangoversion>[0-9]\.[0-9])/topics/http/urls/$', views.index)
+]
+```
+* views.py:
+```python
+from django.shortcuts import render, HttpResponse, redirect
+# Create your views here.
+def index(request, djangoversion):
+  print(djangoversion) # will result in a string e.g. "1.9"
+  print("hello, I am your first request")
+  return HttpResponse('hello')
 
+```
 
 ## Session
 * `python manage.py migrate` (directory with manage.py file inside)
