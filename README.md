@@ -102,6 +102,10 @@ def index(request, djangoversion):
 
 ```
 
+## form data
+* `{% csrf_token %}` in all form with method="POST"
+* access data via request.POST (not request.form as in flask)
+
 ## Session
 * `python manage.py migrate` (directory with manage.py file inside)
 * bracket notation format for FILE.py: `request.session['key']`
