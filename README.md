@@ -52,7 +52,7 @@ mkdir APPNAME
 cd APPNAME
 touch index.html
 ```
-* create static directory:
+* create static directories (PROJECT/apps/APPNAME/static/APPNAME/):
 ```bash
 cd PROJECT/apps/APPNAME
 mkdir static
