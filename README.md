@@ -52,8 +52,36 @@ mkdir APPNAME
 cd APPNAME
 touch index.html
 ```
+* create static directory:
+```bash
+cd PROJECT/apps/APPNAME
+mkdir static
+cd static
+mkdir APPNAME
+cd APPNAME
+mkdir css
+mkdir images
+mkdir js
+```
 * cd into PROJECT (directory with manage.py file inside)
 * python manage.py runserver
+
+
+## Static files formatting (in HTML)
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'second_app/css/style.css' %}">
+  <script src="{% static 'second_app/js/main.js' %}"></script>
+</head>
+<body>
+<img src="{% static 'second_app/img/rick.gif' %}">
+</body>
+</html>
+```
 
 
 ## Session
